@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+
+        <div class="header">
+            <h1>Engineering Blog</h1>
+            <p>life of engineering</p>
+
+        </div>
+       
+        <div class="container">
+            <div class="main">
+                <h2>First blog</h2>
+                <p>
+                    The first step in using flexbox is to turn one of our HTML elements into a flex container. We do this with the display property, which should be familiar from the CSS Box Model chapter. By giving it a value of flex, we’re telling the
+                     browser that everything in the box should be rendered with flexbox instead of the default box model.
+                     This enables the flexbox layout mode—without it, the browser would ignore all the flexbox properties that we’re about to introduce. Explicitly defining flex containers means that you can mix and match flexbox with other layout models
+                      (e.g., floats and everything we’re going to learn in Advanced Positioning).
+                </p>
+                <h2>Second blog</h2>
+                <p> Great! We have a flex container with one flex item in it. However, our page will look exactly like it did before because we haven’t told the container how to display its item.
+                    This has the same effect as adding a margin: 0 auto declaration to the .menu element. But, notice how we did this by adding a property to the parent element (the flex container) instead of directly to the element we wanted to center (the flex item). Manipulating items through their containers like this is a common theme in flexbox, and it’s a bit of a divergence from how we’ve been positioning boxes thus far.
+
+                </p>
+                <h3>Third blog</h3>
+                <p>
+                        Needless to say, this can be a little counterintuitive when you’re trying to lay out a page. Imagine trying to fill a 600px container with three boxes that are all width: 200px, but they don’t fit because they all have a 1px border (making their actual width 202px).
+
+                        Fortunately, CSS lets you change how the width of a box is calculated via the box-sizing property. By default, it has a value of content-box, which leads to the behavior described above. Let’s see what happens when we change it to border-box:
+
+                </p>
+
+            </div>
+            <div class="side1">
+                <h4>SideBar1</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">References</a></li>
+                </ul>
+            </div>
+            <div class="side2">
+                <h4>SideBar2</h4>
+                <ul>
+                    <li><a href="#">other</a></li>
+                    <li><a href="#">other</a></li>
+                    <li><a href="#">other</a></li>
+                    <li><a href="#">other</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="contains">
+            <div class="first">
+                <img src="sid.jpg" alt="mypic" class="pic">
+                <h5>kailash yadav</h5>
+                <p>I am a engineering and developer</p>
+                <p>fist blog is writen by me.</p>
+            </div>
+            <div class="first">
+                    <img src="sid.jpg" alt="mypic" class="pic">
+                    <h5>kailash yadav</h5>
+                    <p>I am a engineering and developer</p>
+                    <p>fist blog is writen by me.</p>
+                </div>
+                <div class="first">
+                        <img src="sid.jpg" alt="mypic" class="pic">
+                        <h5>kailash yadav</h5>
+                        <p>I am a engineering and developer</p>
+                        <p>fist blog is writen by me.</p>
+                    </div>
+        </div>
+    </body>
+</html>

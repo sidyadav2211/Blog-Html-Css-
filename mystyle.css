@@ -1,0 +1,56 @@
+
+
+.heading {
+    background-color: aquamarine;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    height: 200px;
+    padding: 50px;
+}
+.nav {
+   display: block;
+   
+   
+  
+   
+
+    
+    
+}
+ul {
+  
+    
+    list-style-type: none;
+    background-color: black;
+    overflow: hidden;
+    
+}
+li {
+    float: left;
+    font-size: 30px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color: green;
+    color: black;
+}
+li:last-child{
+   
+    float: right;
+}
+.container {
+    border: 3px solid gold;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+   
+}

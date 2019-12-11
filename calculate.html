@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculate</title>
+        
+    </head>
+    <body>
+        <h1>Calculate</h1>
+        <form name="myform">
+   
+            <input type="number" id="num1"  name="frt" placeholder="first no :">
+            
+            <br>
+            <br>
+            <input type="number"  id="num2" name="srt" placeholder="second no :">
+            
+            <br>
+            <br>
+            Result : <input type="number" id="btn" name="result"><br>
+            <br>
+            <button  type="button" style="margin-left:20px" onclick="add()">+</button>
+        </form>
+        <form action="" name="login">
+            <h1>Register </h1>
+            <input type="text" id="name" name="user" placeholder="username" required>
+            <br>
+            <br>
+            <input type="password" id="usr1" name="pass" placeholder="password" required>
+            <br>
+            <br>
+            <input type="password" id="usr2" name="confirm" placeholder="reEnter" required>
+            <br>
+            <br>
+            <input type="button"   name="btns" onclick="reg()"  value="Submit">
+        </form>
+    </body>
+
+    
+</html>
+<script type="text/javascript">
+    function add() {
+        frt=parseInt(myform.frt.value);
+        srt=parseInt(myform.srt.value);
+        result=frt+srt;
+       // myform.result.value=result;
+        alert(result)
+        //document.getElementById("btn").innerHTML=c;
+        
+        
+    }
+    function reg() {
+        var username=document.getElementById('name').value
+        alert("username is :"+username);
+        var passd=document.getElementById('usr1').value;
+        var passd1=document.getElementById("usr2").value;
+        if (passd==passd1) {
+            alert('Match password');
+            
+        }else {
+            alert('wrong');
+        }
+    }
+   
+</script>
